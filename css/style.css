@@ -121,17 +121,19 @@ h2 {
     border-bottom: 4PX solid var(--color-1);
 }
     h3 {
-        border-radius: 20px;
+        border-radius: 3px;
      background-color: var(--color-1);
      color: var(--color-2);
      padding: 4px 20px;
      font-weight: 500;
+    text-align: justify;
+
      }
     img {
         border-radius: 100px;
         border: 10px solid var(--color-1);
-        width: 190px;
-    
+        width: 200px;
+        height: 200px;
     }
     }  
     menu{
@@ -232,8 +234,7 @@ main {
             max-width: 80%;
             font-size: 150%;
             font-weight: 100%;
-        }
-        
+        } 
     }
 }
 menu {
@@ -250,6 +251,52 @@ menu {
     object-fit: cover;
     border: 10px solid green;
     width: 300px;
+   }
+    }
+}
+body.html {
+    background-color: #FF8D09;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23ee8509' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23dd7c0a' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23cc740a' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23bb6b0b' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23AA630B' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+main {
+    header {
+        h1{
+            color: black;
+            font-weight: 700;
+            font-size: 300%;
+        }
+        h2{
+            color: black;
+            border-bottom: none;
+            max-width: 80%;
+            font-size: 150%;
+            font-weight: 100%;
+        } 
+        img{
+            border-radius: 50%;
+            object-fit: cover;
+            border: 10px solid rgb(254, 254, 254);
+            width: 200px;
+            object-fit: contain;
+           }
+    }
+}
+menu {
+    a:is(:link, :visited){
+        color: #0e0e0e;
+        span {
+            background-color: #f6980c;
+
+        }
+
+    }
+   img{
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid rgb(128, 92, 0);
+    width: 200px;
+    object-fit: contain;
    }
     }
 }
