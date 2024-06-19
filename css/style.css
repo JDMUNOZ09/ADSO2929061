@@ -281,7 +281,13 @@ main {
             object-fit: contain;
            }
     }
-}
+    section {
+        p{
+            color: #f6ee0c;
+            font-size: 1rem;
+        }
+    }
+
 menu {
     a:is(:link, :visited){
         color: #0e0e0e;
@@ -299,6 +305,7 @@ menu {
     object-fit: contain;
    }
     }
+}
 }
 
     
