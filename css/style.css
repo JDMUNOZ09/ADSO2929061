@@ -186,7 +186,7 @@ section {
         margin-block: 0.6rem;
     }
     p {
-        color: greenyellow;
+        color: rgb(255, 255, 255);
         font-size: 1.4rem;
     }
     xmp {
