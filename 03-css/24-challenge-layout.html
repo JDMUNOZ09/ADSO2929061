@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 24- Challenge Layout (sprite)</title>
+    <style>
+        body {
+            border: 10px solid #fff;
+            background-color: #17A053;
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header figure.logo {
+            background: url(../images/spriteweb.png) no-repeat;
+            background-position: -10px -398px;
+            height: 192px;
+            width: 192px;
+        }
+
+        header menu {
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        header menu a:is(:link, :visited) {
+            color: #fff;
+            background-color: #0006;
+            border-bottom: 4px solid #fff;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            transition: all 0.5s ease-in;
+            width: 120px;
+        }
+
+        header menu a:is(:hover) {
+            background-color: #0009;
+            border-bottom: 4px solid #ff0;
+        }
+
+        .container {
+            align-items: center;
+            background-color: #0006;
+            margin-left: 220px;
+            margin-bottom: 4rem;
+            width: 839px;
+            height: 210px;
+            display: flex;
+
+        }
+
+        .sprite1 {
+            background: url(../images/spriteweb.png) no-repeat;
+            background-position: -530px -10px;
+            border: 2px solid #fff;
+            height: 150px;
+            padding: 1rem;
+            margin: 10px;
+            width: 220px;
+        }
+
+        .sprite2 {
+            background: url(../images/spriteweb.png) no-repeat;
+            background-position: -530px -10px;
+            border: 2px solid #fff;
+            height: 150px;
+            padding: 1rem;
+            margin: 10px;
+            width: 220px;
+        }
+
+        .sprite3 {
+            background: url(../images/spriteweb.png) no-repeat;
+            background-position: -530px -10px;
+            border: 2px solid #fff;
+            height: 150px;
+            width: 150px;
+            padding: 1rem;
+            margin: 10px;
+            width: 220px;
+        }
+
+        .h4 {
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        .sprite1 h4 {
+            color: #000;
+            background-color: #FFF6;
+            padding: 1rem;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.5s ease-in;
+            width: 220px;
+            height: 200;
+            position: relative;
+            top: -37px;
+            left: -16px;
+        }
+
+        .sprite2 h4 {
+            color: #000;
+            background-color: #FFF6;
+            padding: 1rem;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.5s ease-in;
+            width: 220px;
+            height: 200;
+            position: relative;
+            top: -37px;
+            left: -16px;
+        }
+
+        .sprite3 h4 {
+            color: #000;
+            background-color: #FFF6;
+            padding: 1rem;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.5s ease-in;
+            width: 220px;
+            height: 200;
+            position: relative;
+            top: -37px;
+            left: -16px;
+        }
+
+        aside {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #0006;
+            margin: 0 auto;
+            width: 830px;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 10px;
+            margin-top: 2rem;
+        }
+
+        aside div {
+            display: flex;
+            background-color: #fff;
+            align-items: center;
+        }
+
+        aside div div.logo1 {
+            margin-top: 3rem;
+            background: url(../Images/spriteweb.png) no-repeat;
+            background-position: -285px -502px;
+            height: 100px;
+            width: 100px;
+        }
+
+        aside div div.logo2 {
+            background: url(../Images/spriteweb.png) no-repeat;
+            background-position: -95px -215px;
+            height: 155px;
+            width: 80px;
+            margin-top: 1.5rem;
+            margin-left: 1rem;
+        }
+
+        aside div div.texto {
+            width: 70%;
+            text-align: justify;
+        }
+
+        aside div div p {
+            width: 600px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            margin: 0 auto;
+            width: 850px;
+            margin-bottom: 1rem;
+        }
+
+        footer menu {
+            display: flex;
+            gap: 1rem;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        footer figure.logo {
+            background: url(../Images/spriteweb.png) no-repeat;
+            background-position: -472px -416px;
+            height: 184px;
+            width: 330px;
+        }
+
+        footer menu a:is(:link, :visited) {
+            background-color: #fff;
+            border-bottom: 4px solid #fff;
+            color: gray;
+            padding: 1rem;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.5s ease-in;
+            width: 125px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        footer menu a:is(:hover) {
+            border-bottom: 4px solid #09482C;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+            <menu>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </menu>
+        </header>
+        <section>
+            <div class="container">
+                <div class="sprite1">
+                    <h4>Sprite 01</h4>
+                </div>
+                <div class="sprite2">
+                    <h4>Sprite 02</h4>
+                </div>
+                <div class="sprite3">
+                    <h4>Sprite 03</h4>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <div>
+                <div class="logo1">
+                    </figure>
+                </div>
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cupiditate rerum perspiciatis
+                        dolor nulla corrupti voluptatum, ad alias reiciendis, animi inventore dolores debitis blanditiis
+                        commodi ipsum aspernatur totam rem facere reprehenderit, saepe et amet repudiandae numquam?
+                        Architecto fugit, veniam, nisi quo non recusandae necessitatibus quis cupiditate sunt sed fugiat
+                        neque dolorem amet sint! Vero aut consectetur illum exercitationem architecto voluptas beatae,
+                        voluptate, commodi eos provident, autem ratione delectus asperiores aliquam.</p>
+                </div>
+                <div class="logo2"></div>
+            </div>
+
+            <div>
+                <div class="logo1">
+                    </figure>
+                </div>
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cupiditate rerum perspiciatis
+                        dolor nulla corrupti voluptatum, ad alias reiciendis, animi inventore dolores debitis blanditiis
+                        commodi ipsum aspernatur totam rem facere reprehenderit, saepe et amet repudiandae numquam?
+                        Architecto fugit, veniam, nisi quo non recusandae necessitatibus quis cupiditate sunt sed fugiat
+                        neque dolorem amet sint! Vero aut consectetur illum exercitationem architecto voluptas beatae,
+                        voluptate, commodi eos provident, autem ratione delectus asperiores aliquam.</p>
+                </div>
+                <div class="logo2"></div>
+            </div>
+
+            <div>
+                <div class="logo1">
+                    </figure>
+                </div>
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cupiditate rerum perspiciatis
+                        dolor nulla corrupti voluptatum, ad alias reiciendis, animi inventore dolores debitis blanditiis
+                        commodi ipsum aspernatur totam rem facere reprehenderit, saepe et amet repudiandae numquam?
+                        Architecto fugit, veniam, nisi quo non recusandae necessitatibus quis cupiditate sunt sed fugiat
+                        neque dolorem amet sint! Vero aut consectetur illum exercitationem architecto voluptas beatae,
+                        voluptate, commodi eos provident, autem ratione delectus asperiores aliquam.</p>
+                </div>
+                <div class="logo2"></div>
+            </div>
+        </aside>
+        <footer>
+            <figure class="logo"></figure>
+            <menu>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portafolio</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </menu>
+        </footer>
+    </main>
+</body>
+
+</html>
