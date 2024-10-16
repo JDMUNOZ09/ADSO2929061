@@ -163,7 +163,7 @@ body {
             align-items: center;
             display: flex;
             flex-direction: column;
-            gap: 0.4rem;
+            gap: 0.8rem;
             margin-top: 2rem;
 
             a:is(:link, :visited) {
@@ -384,8 +384,9 @@ body.css {
 
         section {
             p {
-                color: #f6ee0c;
+                color: #ffffff;
                 font-size: 1rem;
+
             }
         }
 
