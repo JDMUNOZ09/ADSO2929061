@@ -3,7 +3,7 @@
     transition: all 0.2s ease-in;
   }
   body {
-    background: url(../images/fondo.jpg);
+    background: url(../images/A\ Saga\ Infinita.jfif);
     font-family: sans-serif;
     background-position: center;
     background-size: cover;
@@ -13,16 +13,16 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            background-color: rgba(243, 238, 238, 0.4);
             margin: 0 auto;
             width: 830px;
             gap: 1rem;
+            opacity: 1;
             margin-bottom: 1rem;
             padding: 10px;
             margin-top: 2rem;
   }
   main {
-    background-color: #ccc;
+    background-color:#ED1D24;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -42,7 +42,7 @@
   main div h2 {
     position: absolute;
     bottom: -14px;
-    background-color: black;
+    background-color: rgba(86, 83, 83, 0.527);
     color: #ccc;
     width: 200px;
     justify-content: center;
@@ -57,13 +57,17 @@
     object-fit: cover;
     width: 200px;
     height: 200px;
+    transition: transform 0.5s ease-in;
+  }
+  main div img:hover {
+    transform: scale(1.1);
   }
   article div text {
-    mask-repeat: repeat;
+    overflow: auto; width: 300px; height: 100px
   }
   
   article {
-    background-color: #ccc;
+    background-color: #ED1D24;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -76,6 +80,7 @@
     width: 200px;
     height: 200px;
     object-fit:c;
+    bottom: 4rem;
 
   }
   
@@ -91,16 +96,16 @@
   }
 }
 
-@media (max-width: 200px) {
+@media (max-width: 500px) {
   main {
-    width: 150px;
+    width: 400px;
   }
   article {
     flex-direction: column;
-    width: 150px;
+    width: 400px;
   }
   header {
-    width: 150px;
+    width: 400px;
   }
 }
  
