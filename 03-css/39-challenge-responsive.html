@@ -1,28 +1,31 @@
 <style>
-* {
+  * {
     transition: all 0.2s ease-in;
   }
+
   body {
     background: url(../images/A\ Saga\ Infinita.jfif);
     font-family: sans-serif;
     background-position: center;
     background-size: cover;
   }
+
   header {
     display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            margin: 0 auto;
-            width: 830px;
-            gap: 1rem;
-            opacity: 1;
-            margin-bottom: 1rem;
-            padding: 10px;
-            margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 830px;
+    gap: 1rem;
+    opacity: 1;
+    margin-bottom: 1rem;
+    padding: 10px;
+    margin-top: 2rem;
   }
+
   main {
-    background-color:#ED1D24;
+    background-color: #ED1D24;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -32,13 +35,14 @@
     margin: 2rem auto;
     padding: 1rem;
   }
-  
+
   main div {
     background: #0009;
     height: 200px;
     width: 200px;
     position: relative;
   }
+
   main div h2 {
     position: absolute;
     bottom: -14px;
@@ -50,22 +54,28 @@
     align-items: center;
 
   }
+
   main div h2:hover {
     height: 60px;
   }
+
   main div img {
     object-fit: cover;
     width: 200px;
     height: 200px;
     transition: transform 0.5s ease-in;
   }
+
   main div img:hover {
     transform: scale(1.1);
   }
+
   article div text {
-    overflow: auto; width: 300px; height: 100px
+    overflow: auto;
+    width: 300px;
+    height: 100px
   }
-  
+
   article {
     background-color: #ED1D24;
     display: flex;
@@ -76,78 +86,93 @@
     margin: 2rem auto;
     padding: 1rem;
   }
+
   article div img {
     width: 200px;
     height: 200px;
-    object-fit:c;
+    object-fit: c;
     bottom: 4rem;
 
   }
-  
+
   @media (max-width: 860px) {
-  main {
-    width: 500px;
-  }
-  article {
-    width: 500px;
-  }
-  header {
-    width: 500px;
-  }
-}
+    main {
+      width: 500px;
+    }
 
-@media (max-width: 500px) {
-  main {
-    width: 400px;
-  }
-  article {
-    flex-direction: column;
-    width: 400px;
-  }
-  header {
-    width: 400px;
-  }
-}
- 
+    article {
+      width: 500px;
+    }
 
+    header {
+      width: 500px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    main {
+      width: 400px;
+    }
+
+    article {
+      flex-direction: column;
+      width: 400px;
+    }
+
+    header {
+      width: 400px;
+    }
+  }
 </style>
 <header>
-    <img src="../images/Titulo.png" alt="">
+  <img src="../images/Titulo.png" alt="">
 </header>
 <main>
-    <div>
-     <h2>Capitan america</h2>   
-<img src="../images/capitan america.jpg" alt="capitan America">
-    </div>
-    <div>
-        <h2>Iroman</h2>
-      <img src="../images/iroman.jpg" alt="">
-    </div>
-    <div>
-        <h2>Thor</h2>
-      <img src="../images/thor.jpg" alt="">
-    </div>
-    <div>
-        <h2>Spider Man</h2>
-      <img src="../images/traje-spidey-clasico.jpg" alt="">
-    </div>
-  </main>
-  <article>
-    <div class="img">
-      <img src="..//images/stan-lee.jpg" alt="">
-    </div>
-    <div class="txt">
-      <h2> Stan Lee</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe quas a vero magni, amet eos, ratione ex quos nobis deserunt illo velit animi minus repellat maiores. Minus dolores necessitatibus corrupti fugiat quam repellat tempore odio. Eligendi velit doloribus nisi voluptatem accusamus dignissimos harum id animi necessitatibus sit praesentium ad fugit culpa voluptas, pariatur, temporibus reiciendis! Sed fugit voluptatum quidem accusantium placeat vel aliquam pariatur odio doloribus! Quos, doloribus quibusdam. Commodi eaque voluptatem modi quia fugiat veritatis hic quo, minus non enim nemo dolores aspernatur perspiciatis delectus maxime quasi blanditiis? Consectetur natus excepturi officiis ullam harum, ipsum soluta nostrum iusto?</p>
-    </div>
-  </article>
+  <div>
+    <h2>Capitan america</h2>
+    <img src="../images/capitan america.jpg" alt="capitan America">
+  </div>
+  <div>
+    <h2>Iroman</h2>
+    <img src="../images/iroman.jpg" alt="">
+  </div>
+  <div>
+    <h2>Thor</h2>
+    <img src="../images/thor.jpg" alt="">
+  </div>
+  <div>
+    <h2>Spider Man</h2>
+    <img src="../images/traje-spidey-clasico.jpg" alt="">
+  </div>
+</main>
+<article>
+  <div class="img">
+    <img src="..//images/stan-lee.jpg" alt="">
+  </div>
+  <div class="txt">
+    <h2> Stan Lee</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe quas a vero magni, amet eos, ratione ex
+      quos nobis deserunt illo velit animi minus repellat maiores. Minus dolores necessitatibus corrupti fugiat quam
+      repellat tempore odio. Eligendi velit doloribus nisi voluptatem accusamus dignissimos harum id animi
+      necessitatibus sit praesentium ad fugit culpa voluptas, pariatur, temporibus reiciendis! Sed fugit voluptatum
+      quidem accusantium placeat vel aliquam pariatur odio doloribus! Quos, doloribus quibusdam. Commodi eaque
+      voluptatem modi quia fugiat veritatis hic quo, minus non enim nemo dolores aspernatur perspiciatis delectus maxime
+      quasi blanditiis? Consectetur natus excepturi officiis ullam harum, ipsum soluta nostrum iusto?</p>
+  </div>
+</article>
 
-  <article>
-    <div class="img">
-      <img src="..//images/deadpool-and-wolverine-home-ent-article-card.jpg" alt="">
-    </div>
-    <div class="txt">
-      <h2> Deadpool vs Wolverie</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eius architecto laboriosam ad? Et laboriosam aliquid dolorum error? Commodi aspernatur esse autem, vitae iste optio illum quas eveniet! Voluptates assumenda sint similique minus! Accusantium eveniet minima dicta velit animi in officiis minus ullam laudantium? Aspernatur neque nam numquam sed delectus iusto, eius repellat impedit iste quisquam, esse pariatur, veniam voluptatem perferendis omnis eos possimus deserunt odit excepturi repellendus quod id ab! Dignissimos dolorum explicabo nihil beatae necessitatibus facilis ullam voluptas possimus, laudantium molestias, consectetur nulla non laboriosam commodi praesentium saepe excepturi iusto minus pariatur reprehenderit sunt eum sit, numquam ipsa.</p>
-    </div>
-  </article>
+<article>
+  <div class="img">
+    <img src="..//images/deadpool-and-wolverine-home-ent-article-card.jpg" alt="">
+  </div>
+  <div class="txt">
+    <h2> Deadpool vs Wolverie</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eius architecto laboriosam ad? Et
+      laboriosam aliquid dolorum error? Commodi aspernatur esse autem, vitae iste optio illum quas eveniet! Voluptates
+      assumenda sint similique minus! Accusantium eveniet minima dicta velit animi in officiis minus ullam laudantium?
+      Aspernatur neque nam numquam sed delectus iusto, eius repellat impedit iste quisquam, esse pariatur, veniam
+      voluptatem perferendis omnis eos possimus deserunt odit excepturi repellendus quod id ab! Dignissimos dolorum
+      explicabo nihil beatae necessitatibus facilis ullam voluptas possimus, laudantium molestias, consectetur nulla non
+      laboriosam commodi praesentium saepe excepturi iusto minus pariatur reprehenderit sunt eum sit, numquam ipsa.</p>
+  </div>
+</article>
