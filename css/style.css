@@ -404,7 +404,7 @@ background-size: cover;
                 color: #0e0e0e;
 
                 span {
-                    background-color: #f6980c;
+                    background-color: #062b89;
 
                 }
 
@@ -575,7 +575,7 @@ background-size: cover;
             a:is(:link, :visited){
                 color: #000000;
                 span {
-                    background-color: #4a71fc;
+                    background-color: #5e2aa2;
                 }
             }
             h3 {
